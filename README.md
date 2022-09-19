@@ -22,8 +22,8 @@ The code aims at building a deep learning model.
 - We then do the required pre-processing for the data to be compatible with the model to be built.We also perform the data splits because we will not be using 16,000  images due to hardware constraints , we will perform a Train Data Split Size=6500 Records and Validation Data Split Size=1629 Records
 - We then move on to Model building which will be a simple keras classifier model that has been converted to an object detector. Essentially it is a pre-trained convolution neural network(in this case base skeleton of MobileNet) on a ImageNet DS who’s top layer gets replaced by two heads , namely a regression head 
 and a classification head. This can be thought of as two parallel networks , one which does classification and the other that calculates the bounding box , each having its own loss function respectively. The combined loss of these functions is what the network strives to reduce with each epoch during the training.
--We also go through multiple iterations while building the model to try different hyper parameters for base skeleton n/w, top layers, optimizer and  image size
--The best model resulting from the above iterative process is chosen as the model.
+- Hyper Parameter tuning -We also go through multiple iterations while building the model to try different hyper parameters for base skeleton n/w, top layers, optimizer and  image size
+- The best model resulting from the above iterative process is chosen as the model.
  
 
 
