@@ -6,18 +6,14 @@
 - Details of the **Data set**, **context** , **domain**, **summary of the code/solution** , **sample input** to the program ,  **sample output** from the program and **Final result** are listed in the sections to follow.
 
 ## Data Description:
-- Data Set:EDA_And_Preprocessing.ipynb
-Stanford Car Data Set hosted by Kaggle
+- Data Set:Stanford Car Data Set hosted by Kaggle
 
-- The Cars dataset contains 16,185 images of 196 classes of cars. The data is split into 8,144 
-training images and 8,041 testing images, where each class has been split roughly in a 50-
-50 split. Classes are typically at the level of Make, Model, Year, e.g. 2012 Tesla Model S or 
-2012 BMW M3 coup
+- The Cars dataset contains 16,185 images of 196 classes of cars. The data is split into 8,144 training images and 8,041 testing images, where each class has been split roughly in a 50-50 split. Classes are typically at the level of Make, Model, Year, e.g. 2012 Tesla Model S or 2012 BMW M3 coup
 
 - Train Images: Consists of real images of cars as per the make and year of the car. 
-Test Images: Consists of real images of cars as per the make and year of the car. 
-Train Annotation: Consists of bounding box region for training images. 
-Test Annotation: Consists of bounding box region for testing images
+- Test Images: Consists of real images of cars as per the make and year of the car. 
+- Train Annotation: Consists of bounding box region for training images. 
+- Test Annotation: Consists of bounding box region for testing images
 
 ## Domain:
 Automotive Surveillance
