@@ -17,7 +17,7 @@
 - Automotive Surveillance
 
 ## Summary of the Solution/Code:
-The code aims at building a deep learning model.
+The code aims at building a CNN model.
 - We begin by doing an Exploratory Data analyses and Visualisation on the images , refer **python worksheet /EDA/EDA_And_Preprocessing.ipynb**
 - We then do the required pre-processing for the data to be compatible with the model to be built.We also perform the data splits because we will not be using 16,000  images due to hardware constraints , we will perform a Train Data Split Size=6500 Records and Validation Data Split Size=1629 Records
 - We then move on to Model building which will be a simple keras classifier model that has been converted to an object detector. Essentially it is a pre-trained convolution neural network(in this case base skeleton of MobileNet) on a ImageNet DS who’s top layer gets replaced by two heads , namely a regression head 
@@ -29,7 +29,7 @@ and a classification head. This can be thought of as two parallel networks , one
 Here is a sample input image to the program/model
 
 
-## Sample Ouput :
+## Sample Ouput/Prediction :
 Here is a sample Ouput image to the program/model for the corresponding imput image above.
 
 
