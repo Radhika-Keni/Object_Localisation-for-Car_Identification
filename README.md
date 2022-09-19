@@ -3,7 +3,7 @@
 
 ## Objective of this notebook
 - The purpose of this notebook is to build a Deep learning based car identification model
-- Details of the **data set**, **context** , **domain**, **summary of the code/solution** , **sample input** to the program ,  **sample output** from the program and **Final result** are listed in the sections to follow.
+- Details of the **data set**, **context** , **domain**, **summary of the code/solution** ,  **sample output/Prediction** from the program and **Final result** are listed in the sections to follow.
 
 ## Data Description:
 - Data Set:Stanford Car Data Set hosted by Kaggle
@@ -25,19 +25,11 @@ and a classification head. This can be thought of as two parallel networks , one
 - Hyper Parameter tuning -We also go through multiple iterations while building the model to try different hyper parameters for base skeleton n/w, top layers, optimizer and  image size
 - The best model resulting from the above iterative process is chosen as the model refer **python worksheet /Custom Baseline Model/Final_Custom_Baseline_Model.ipynb**
 
-## Sample Input :
-Here is a sample input image to the program/model
-
 
 ## Sample Ouput/Prediction :
 Here is a sample Ouput image to the program/model for the corresponding imput image above.
 
+![image](https://user-images.githubusercontent.com/68383273/191107674-7ea077b3-cb37-499e-bfd7-ad964f81a668.png)
 
 ## Result
 - This model was able to obtain an accuracy of 0.70, IOU of 0.82 and mAp score of 0.592 .Refer **python worksheet /Custom Baseline Model/Calculate_mAp.ipynb** for mAp score calculation
-
-
-
- 
-
-
