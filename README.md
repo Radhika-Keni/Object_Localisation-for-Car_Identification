@@ -16,7 +16,7 @@
 - Test Annotation: Consists of bounding box region for testing images
 
 ## Domain:
-Automotive Surveillance
+- Automotive Surveillance
 
 ## Summary of the Solution/Code:
 The code aims at building a deep learning model.
