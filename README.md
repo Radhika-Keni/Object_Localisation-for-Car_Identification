@@ -1,9 +1,9 @@
-# Object_Detection for Car_Identification
+# Object Detection for Car Identification
 
 
 ## Objective of this notebook
 - The purpose of this notebook is to build a Deep learning based car identification model
-- Details of the **Data set**, **context** , **domain**, **summary of the code/solution** , **sample input** to the program ,  **sample output** from the program and **Final result** are listed in the sections to follow.
+- Details of the **data set**, **context** , **domain**, **summary of the code/solution** , **sample input** to the program ,  **sample output** from the program and **Final result** are listed in the sections to follow.
 
 ## Data Description:
 - Data Set:Stanford Car Data Set hosted by Kaggle
@@ -23,7 +23,21 @@ The code aims at building a deep learning model.
 - We then move on to Model building which will be a simple keras classifier model that has been converted to an object detector. Essentially it is a pre-trained convolution neural network(in this case base skeleton of MobileNet) on a ImageNet DS who’s top layer gets replaced by two heads , namely a regression head 
 and a classification head. This can be thought of as two parallel networks , one which does classification and the other that calculates the bounding box , each having its own loss function respectively. The combined loss of these functions is what the network strives to reduce with each epoch during the training.
 - Hyper Parameter tuning -We also go through multiple iterations while building the model to try different hyper parameters for base skeleton n/w, top layers, optimizer and  image size
-- The best model resulting from the above iterative process is chosen as the model.
+- The best model resulting from the above iterative process is chosen as the model refer **python worksheet /Custom Baseline Model/Final_Custom_Baseline_Model.ipynb**
+
+## Sample Input :
+Here is a sample input image to the program/model
+
+
+## Sample Ouput :
+Here is a sample Ouput image to the program/model for the corresponding imput image above.
+
+
+## Result
+- This model was able to obtain an accuracy of 0.70, IOU of 0.82 and mAp score of 0.592 .Refer **python worksheet /Custom Baseline Model/Calculate_mAp.ipynb** for mAp score calculation
+
+
+
  
 
 
