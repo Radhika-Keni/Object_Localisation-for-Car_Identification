@@ -2,32 +2,34 @@
 
 
 ## Objective of this notebook
-- The purpose of this notebook is to perform descriptive statistics(Exploratory Data Analyses) and inferential statistics(Hypothesis Testing ) in python on the  given data set
-- Details of the data set,attributes, context, domain and **summary of the code** are listed in the sections to follow.
+- The purpose of this notebook is to build a Deep learning based car identification model
+- Details of the data set,context,domain, **summary of the code/solution** , **sample input** to the program ,  **sample output** from the program and **Result** are listed in the sections to follow.
 
 ## Data Description:
-Data Set:
+Data Set:EDA_And_Preprocessing.ipynb
+Stanford Car Data Set hosted by Kaggle
 
-The data at hand contains medical costs of people characterized by certain
-attributes. 
+The Cars dataset contains 16,185 images of 196 classes of cars. The data is split into 8,144 
+training images and 8,041 testing images, where each class has been split roughly in a 50-
+50 split. Classes are typically at the level of Make, Model, Year, e.g. 2012 Tesla Model S or 
+2012 BMW M3 coup
 
-Attribute Information:
-age: age of primary beneficiary
-sex: insurance contractor gender, female, male
-bmi: Body mass index, providing an understanding of body, weights that are relatively high or low relative to height, objective index of body weight (kg / m ^2) using the ratio of height to weight, ideally 18.5 to 24.9
-children: Number of children covered by health insurance / Number of dependents
-smoker: Smoking
-region: the beneficiary's residential area in the US, northeast, southeast,southwest, northwest.
-charges: Individual medical costs billed by health insurance
+Train Images: Consists of real images of cars as per the make and year of the car. 
+Test Images: Consists of real images of cars as per the make and year of the car. 
+Train Annotation: Consists of bounding box region for training images. 
+Test Annotation: Consists of bounding box region for testing images
 
 ## Domain:
-Helathcare
+Automotive Surveillance
 
-## Summary of the Code:
-- In this worksheet we perform Exploratory Data analyses/Descriptive tatistics  and Inferential Statistics(Hypothesis Testing) on a dataset 
-- We begin by importing the data and doing some basic EDA/Descriptive stats  such as exploring the attributes ,checking for missing values/null values and  5 point summaries of attributes .
-- We then go on to visualising the distributions of key attributes like age , bmi  and charges, checking their skewness, checking for outliers.
-- We follow this up by doing  a bivariate analyses/pair plot on the attributes to check for correlation
-- Finally we do hypothesis testing on certain claims on the data which would be important insights if proved true by statistical evidence.
+## Summary of the Solution/Code:
+The code aims at building a deep learning model.
+- We begin by doing an Exploratory Data analyses and Visualisation on the images , refer **python worksheet EDA_And_Preprocessing.ipynb**
+- We first do the required pre-processing for the data to be compatible with the model to be built.We also perform the data splits because we will not be using 16,000  images due to hardware constraints , we will perform a Train Data Split Size=6500 Records and Validation Data Split Size=1629 Records
+- We then move on to Model building which will be a simple keras classifier model that has been converted to an object detector. Essentially it is a pre-trained convolution neural network(in this case base skeleton of MobileNet) on a ImageNet DS who’s top layer gets replaced by two heads , namely a regression head 
+and a classification head. This can be thought of as two parallel networks , one which does classification and the other that calculates the bounding box , each having its own loss function respectively. The combined loss of these functions is what the network strives to reduce with each epoch during the training.
+-We also go through multiple iterations while building the model to try different hyper parameters for base skeleton n/w, top layers, optimizer and  image size
+-The best model resulting from the above iterative process is chosen as the model.
+ 
 
 
