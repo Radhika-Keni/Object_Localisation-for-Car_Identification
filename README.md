@@ -27,7 +27,7 @@ and a classification head. This can be thought of as two parallel networks , one
 
 
 ## Sample Ouput/Prediction :
-Here is a sample Ouput image to the program/model for the corresponding imput image above.
+Here is a sample Ouput image to the program/model alongside the ground truth
 
 ![image](https://user-images.githubusercontent.com/68383273/191107674-7ea077b3-cb37-499e-bfd7-ad964f81a668.png)
 
