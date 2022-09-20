@@ -3,7 +3,12 @@
 
 ## Objective of this notebook
 - The purpose of this notebook is to build a Deep learning based car identification model
-- Details of the **data set** ,  **summary of the code/solution**  , **sample output/Prediction** from the program and **final result** of the project are listed in the sections to follow.
+- Details of the **problem statement**  , **data set** ,  **summary of the code/solution**  , **sample output/Prediction** from the program and **final result** of the project are listed in the sections to follow.
+
+## Problem Statement 
+Computer Vision can be used to automate supervision and generate action appropriate action trigger  if the event is predicted from the image of interest.
+In this particular use case, we will be exploring how a car moving on the road can be easily identified by a camera by identifying the make of the car, type, color, number plates, etc.This could be very useful for monitoring criminal activity, identifying fake license plates, etc. It could also be useful in several other use-cases like identifying popularity of certain car types/make in certain geographies etc
+
 
 ## Data Description:
 - Data Set:Stanford Car Data Set hosted by Kaggle
