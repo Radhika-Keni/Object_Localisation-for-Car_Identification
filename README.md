@@ -19,7 +19,7 @@ In this particular use case, we will be exploring how a car moving on the road c
 - Test Annotation: Consists of bounding box region for testing images
 
 ## Domain:
-- Automotive Surveillance
+  Automotive Surveillance
 
 ## Summary of the Solution/Code:
 The code aims at building a CNN model.
