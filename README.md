@@ -3,7 +3,7 @@
 
 ## Objective of this notebook
 - The purpose of this notebook is to build a Deep learning based car identification model
-- Details of the **data set**, **summary of the code/solution** , **sample output/Prediction** from the program and **final result** of the project are listed in the sections to follow.
+- Details of the **data set** ,  **summary of the code/solution**  , **sample output/Prediction** from the program and **final result** of the project are listed in the sections to follow.
 
 ## Data Description:
 - Data Set:Stanford Car Data Set hosted by Kaggle
