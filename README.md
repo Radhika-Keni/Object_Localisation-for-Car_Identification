@@ -1,8 +1,9 @@
-# Object Detection for Car Identification
+# Object Localisation for Car Identification
 
 
 ## Objective of this notebook
 - The purpose of this notebook is to build a Deep learning based car identification model
+- Lets note here that we term this as object localisation as the data set at hand has one object per image & therefore we can aim at building an object localisation model instead of a conventional object detection model
 - Details of the **problem statement**  , **data set** ,  **summary of the code/solution**  , **sample output/Prediction** from the program and **final result** of the project are listed in the sections to follow.
 
 ## Problem Statement 
