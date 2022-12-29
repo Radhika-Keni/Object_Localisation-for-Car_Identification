@@ -38,3 +38,8 @@ Here is a sample Ouput image to the program/model alongside the ground truth
 
 ## Result
 - This model was able to obtain an accuracy of 0.70, IOU of 0.82 and mAp score of 0.592 .Refer **python worksheet /Custom Baseline Model/Calculate_mAp.ipynb** for mAp score calculation
+
+## Extension
+- For this data set , we had the luxury of building a custom object localisation model because a single object exists in the image & therefore we should start with the simplest model possible - a custom object localisation model
+- Now as an extension to this worksheet , we could try conventional object detection models like YOLO and SSD to see  whether they were able to give us better scores and log the results.
+-It would be interesting to see if using complex models like YOLO or SSD on this data set just ended up being an overkill
