@@ -5,6 +5,7 @@
 - The purpose of this notebook is to build a Deep learning based car identification model
 - Lets note here that we term this as object localisation as the data set at hand has one object per image & therefore we can aim at building an object localisation model instead of a conventional object detection model
 - Details of the **problem statement**  , **data set** ,  **summary of the code/solution**  , **sample output/Prediction** from the program and **final result** of the project are listed in the sections to follow.
+- Side Note : This notebook is part of our capstone project submission files done during our PGP AI/ML 
 
 ## Problem Statement 
 Computer Vision can be used to automate supervision and generate action appropriate action trigger  if the event is predicted from the image of interest.
@@ -43,6 +44,10 @@ Here is a sample Ouput image to the program/model alongside the ground truth
 
 ## Result
 - This model was able to obtain an accuracy of 0.70, IOU of 0.82 and mAp score of 0.592 .Refer **python worksheet /Custom Baseline Model/Calculate_mAp.ipynb** for mAp score calculation
+
+## References & Guidance
+- PGP GL/UAT study material 
+- Capstone Mentor guidance
 
 ## Extension
 - For this data set , we had the luxury of building a custom object localisation model because a single object exists in each image of this data set  & therefore we should start with the simplest model possible - a custom object localisation model
